@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{page.title}}</title>
+	<style type="text/css">
+	body {
+		font-family: '微软雅黑';
+	}
+	* {
+		box-sizing: border-box;
+	}
+	header {
+		width: 100%;
+		display: fixed;
+		_display:absolute;
+		top: 0px;
+		z-index: 2;
+		background-color:  rgba(251,251,251,0.2);
+		margin: 0px;
+		}
+	header ul{
+		overflow: auto;
+		margin: 0px;
+		display: inline-block;
+		padding: 0px;
+	}
+	header li a:visited,header li a:hover,header li a:active, header li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	header li {
+		float: left;
+		padding: 0px 10px;
+		list-style: none;
+	}
+	</style>
+</head>
+<body>
+<header>
+	<ul>
+		<li data-menuanchor="firstPage"><a href="">菜单1</a></li>
+		<li data-menuanchor="firstPage"><a href="">菜单2</a></li>
+		<li data-menuanchor="firstPage"><a href="">菜单3</a></li>
+		<li data-menuanchor="firstPage"><a href="">菜单4</a></li>
+	</ul>	
+</header>
+<div id="fullpage">
+		{{content}}
+</div>
+</body>
+</html>
